@@ -2,12 +2,15 @@
     {
         "id": 1,
         "name": "Jose Perez",
-        "avatar":"http://www.lepfitness.co.uk/wp-content/uploads/2017/08/mock-certified-trainer-446x320.jpg"
+        "avatar":"http://www.usnis.org/file/2018/01/famous_characteristics_of_your_personal_trainer.jpg",
+        "description":"Listo para entrenar?"
     }
     ,
     {
         "id": 2,
-        "name": "Angie Gamba"
+        "name": "Angie Gamba",
+        "avatar":"https://roar-fitness.com/wp-content/uploads/2016/01/unspecified-copy-510x512.jpeg",
+        "description":"No pain no gain."
     },
     {
         "id": 3,

@@ -14,21 +14,37 @@
             
             $urlRouterProvider.otherwise("/trainersList");
             
-            $stateProvider.state('trainersList', {
+            $stateProvider.state('trainers', {
                 
-                url: '/trainers/list',
+                url: '/trainers',
+                abstract: true,
                 views: {
                     'mainView': {
+                        templateUrl: basePath + 'trainers.html',
+                        controller: 'trainerCtrl',
+                        controllerAs: 'ctrl'
+                    }
+                }
+            }).state('trainersList', {
+                
+                url: '/list',
+                parent: 'trainers',
+                views: {
+                    'listView': {
                         templateUrl: basePath + 'trainers.list.html',
                         controller: 'trainerCtrl',
                         controllerAs: 'ctrl'
                     }
                 }
             }).state('trainerDetail',{
-                url:'/{idTrainer int}/trainerDetail',
+                url:'/{idTrainer: int}/detail',
+                parent: 'trainers',
                 param:{idTrainer:null},
                 views:{
-                    'mainView':{
+                    'listView': {
+                        templateUrl: basePath + 'trainers.list.html'
+                    },
+                    'detailView':{
                         templateUrl: basePath + 'trainers.detail.html',
                         controller: 'trainerDetailCtrl',
                         controllerAs: 'ctrl'

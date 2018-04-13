@@ -4,7 +4,7 @@
     mod.controller('trainerDetailCtrl', ['$scope', '$http', 'trainerContext', '$state', '$filter',
         function ($scope, $http, trainerContext, $state, $filter) {
 
-            if (($state.params.trainerId !== undefined) && ($state.params.trainerId !== null)) {
+            if (($state.params.idTrainer !== undefined) && ($state.params.idTrainer !== null)) {
                 $http.get('data/trainers.json').then(function (response) {
                     $scope.trainersRecords = response.data;
                     $scope.currentTrainer = $filter('filter')($scope.trainersRecords, {id: $state.params.idTrainer}, true)[0];
