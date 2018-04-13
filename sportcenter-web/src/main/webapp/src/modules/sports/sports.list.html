@@ -1,0 +1,15 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-2 col-md-2" ng-repeat="sport in sportsRecords">
+            <div class="thumbnail">
+                <a ui-sref="sportDetail({sportId: sport.id})">          
+                    <img class="img-responsive" ng-src='{{sport.image}}' alt="{{sport.name}}" />  
+                </a>
+                <div class="caption text-center">{{sport.name}}</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

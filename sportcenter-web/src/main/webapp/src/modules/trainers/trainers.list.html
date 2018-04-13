@@ -1,0 +1,12 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-2 col-md-2" ng-repeat="trainer in trainersRecords">
+            <div class="thumbnail">
+                <a ui-sref="trainerDetail({idTrainer: trainer.id})">          
+                    <img class="img-responsive" ng-src='{{trainer.avatar}}' alt="{{trainer.name}}" />  
+                </a>
+                <div class="caption text-center">{{trainer.name}}</div>
+            </div>
+        </div>
+    </div>
+</div>

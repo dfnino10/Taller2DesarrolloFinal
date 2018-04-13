@@ -1,0 +1,21 @@
+[
+    {
+        "id": 1,
+        "name": "Jose Perez",
+        "avatar":"http://www.lepfitness.co.uk/wp-content/uploads/2017/08/mock-certified-trainer-446x320.jpg"
+    }
+    ,
+    {
+        "id": 2,
+        "name": "Angie Gamba"
+    },
+    {
+        "id": 3,
+        "name": "Mauricio Torres"
+    },
+    {
+        "id": 4,
+        "name": "Liliana Sánchez"
+    }
+]
+ 
